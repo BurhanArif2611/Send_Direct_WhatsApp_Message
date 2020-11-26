@@ -1,4 +1,4 @@
-package com.iblinfotech.apps.whatsappdirect.New.Utils;
+package com.directmessage.rushmessage.wadirect.New.Utils;
 
 /**
  * Created by iblinfotech on 13/09/18.

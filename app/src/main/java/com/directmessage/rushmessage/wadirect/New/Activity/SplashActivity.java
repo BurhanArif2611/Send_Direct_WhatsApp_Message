@@ -1,12 +1,12 @@
-package com.iblinfotech.apps.whatsappdirect.New.Activity;
+package com.directmessage.rushmessage.wadirect.New.Activity;
 
 import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.iblinfotech.apps.whatsappdirect.New.Activity.MainActivity;
-import com.iblinfotech.apps.whatsappdirect.New.R;
+import com.directmessage.rushmessage.wadirect.New.Activity.MainActivity;
+import com.directmessage.rushmessage.wadirect.New.R;
 
 public class SplashActivity extends AppCompatActivity {
 

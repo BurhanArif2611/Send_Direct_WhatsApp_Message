@@ -1,4 +1,4 @@
-package com.iblinfotech.apps.whatsappdirect.New.Activity;
+package com.directmessage.rushmessage.wadirect.New.Activity;
 
 import android.Manifest;
 import android.app.FragmentTransaction;
@@ -31,14 +31,14 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.iblinfotech.apps.whatsappdirect.New.Adapter.CallListAdapter;
-import com.iblinfotech.apps.whatsappdirect.New.Adapter.CallLogAdapter;
-import com.iblinfotech.apps.whatsappdirect.New.MessageFragment;
-import com.iblinfotech.apps.whatsappdirect.New.PhoneCallsfragment;
-import com.iblinfotech.apps.whatsappdirect.New.R;
-import com.iblinfotech.apps.whatsappdirect.New.Utils.AdapterCallback;
-import com.iblinfotech.apps.whatsappdirect.New.Utils.CallLogHelper;
-import com.iblinfotech.apps.whatsappdirect.New.Utils.CallLogItem;
+import com.directmessage.rushmessage.wadirect.New.Adapter.CallListAdapter;
+import com.directmessage.rushmessage.wadirect.New.Adapter.CallLogAdapter;
+import com.directmessage.rushmessage.wadirect.New.MessageFragment;
+import com.directmessage.rushmessage.wadirect.New.PhoneCallsfragment;
+import com.directmessage.rushmessage.wadirect.New.R;
+import com.directmessage.rushmessage.wadirect.New.Utils.AdapterCallback;
+import com.directmessage.rushmessage.wadirect.New.Utils.CallLogHelper;
+import com.directmessage.rushmessage.wadirect.New.Utils.CallLogItem;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;

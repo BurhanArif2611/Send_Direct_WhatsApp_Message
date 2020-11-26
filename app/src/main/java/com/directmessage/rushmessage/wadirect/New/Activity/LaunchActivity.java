@@ -1,4 +1,4 @@
-package com.iblinfotech.apps.whatsappdirect.New.Activity;
+package com.directmessage.rushmessage.wadirect.New.Activity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -20,8 +20,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.iblinfotech.apps.whatsappdirect.New.R;
-import com.iblinfotech.apps.whatsappdirect.New.Utils.PrefManager;
+import com.directmessage.rushmessage.wadirect.New.R;
+import com.directmessage.rushmessage.wadirect.New.Utils.PrefManager;
 
 public class LaunchActivity extends AppCompatActivity implements View.OnClickListener {
 

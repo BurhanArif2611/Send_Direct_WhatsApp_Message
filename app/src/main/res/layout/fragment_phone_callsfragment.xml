@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/pressed_bg"
-    tools:context="com.iblinfotech.apps.whatsappdirect.New.PhoneCallsfragment">
+    tools:context="com.directmessage.rushmessage.wadirect.New.PhoneCallsfragment">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycleview_call_log"

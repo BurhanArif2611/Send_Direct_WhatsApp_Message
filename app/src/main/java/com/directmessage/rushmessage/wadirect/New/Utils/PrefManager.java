@@ -1,4 +1,4 @@
-package com.iblinfotech.apps.whatsappdirect.New.Utils;
+package com.directmessage.rushmessage.wadirect.New.Utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;

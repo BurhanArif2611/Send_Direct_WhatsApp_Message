@@ -1,4 +1,4 @@
-package com.iblinfotech.apps.whatsappdirect.New.Adapter;
+package com.directmessage.rushmessage.wadirect.New.Adapter;
 
 import android.app.Activity;
 import android.content.Context;
@@ -12,10 +12,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.iblinfotech.apps.whatsappdirect.New.Activity.MainActivity;
-import com.iblinfotech.apps.whatsappdirect.New.R;
-import com.iblinfotech.apps.whatsappdirect.New.Utils.AdapterCallback;
-import com.iblinfotech.apps.whatsappdirect.New.Utils.CallLogItem;
+import com.directmessage.rushmessage.wadirect.New.Activity.MainActivity;
+import com.directmessage.rushmessage.wadirect.New.R;
+import com.directmessage.rushmessage.wadirect.New.Utils.AdapterCallback;
+import com.directmessage.rushmessage.wadirect.New.Utils.CallLogItem;
 
 import java.util.ArrayList;
 

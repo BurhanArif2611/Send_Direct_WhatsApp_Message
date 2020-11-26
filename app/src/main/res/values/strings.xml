@@ -11,8 +11,11 @@
 
     <string name="call_list">Select Number</string>
 
-    <string name="banner_home_footer">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="Interstitial_Ad">ca-app-pub-3940256099942544/1033173712</string>
+   <!-- <string name="banner_home_footer">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="Interstitial_Ad">ca-app-pub-3940256099942544/1033173712</string>-->
+
+    <string name="banner_home_footer">ca-app-pub-5951208659244773/7565638441</string>
+    <string name="Interstitial_Ad">ca-app-pub-5951208659244773/4549109786</string>
 
     <string name="next">NEXT</string>
     <string name="skip">SKIP</string>

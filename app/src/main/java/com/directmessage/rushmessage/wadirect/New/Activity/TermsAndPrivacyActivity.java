@@ -1,4 +1,4 @@
-package com.iblinfotech.apps.whatsappdirect.New.Activity;
+package com.directmessage.rushmessage.wadirect.New.Activity;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toolbar;
 
-import com.iblinfotech.apps.whatsappdirect.New.R;
+import com.directmessage.rushmessage.wadirect.New.R;
 
 public class TermsAndPrivacyActivity extends AppCompatActivity {
 

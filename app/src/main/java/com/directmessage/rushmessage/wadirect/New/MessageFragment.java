@@ -1,4 +1,4 @@
-package com.iblinfotech.apps.whatsappdirect.New;
+package com.directmessage.rushmessage.wadirect.New;
 
 
 import android.Manifest;
@@ -26,13 +26,13 @@ import android.widget.Toast;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
-import com.iblinfotech.apps.whatsappdirect.New.Activity.CallLogHistoryList;
-import com.iblinfotech.apps.whatsappdirect.New.Activity.MainActivity;
-import com.iblinfotech.apps.whatsappdirect.New.Adapter.CallListAdapter;
-import com.iblinfotech.apps.whatsappdirect.New.Adapter.MessageAdapter;
-import com.iblinfotech.apps.whatsappdirect.New.Utils.AdapterCallback;
-import com.iblinfotech.apps.whatsappdirect.New.Utils.CallLogItem;
-import com.iblinfotech.apps.whatsappdirect.New.Utils.SMSModel;
+import com.directmessage.rushmessage.wadirect.New.Activity.CallLogHistoryList;
+import com.directmessage.rushmessage.wadirect.New.Activity.MainActivity;
+import com.directmessage.rushmessage.wadirect.New.Adapter.CallListAdapter;
+import com.directmessage.rushmessage.wadirect.New.Adapter.MessageAdapter;
+import com.directmessage.rushmessage.wadirect.New.Utils.AdapterCallback;
+import com.directmessage.rushmessage.wadirect.New.Utils.CallLogItem;
+import com.directmessage.rushmessage.wadirect.New.Utils.SMSModel;
 
 import java.util.ArrayList;
 import java.util.List;

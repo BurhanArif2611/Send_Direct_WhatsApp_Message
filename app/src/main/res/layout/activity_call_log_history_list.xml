@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorSecondary"
     android:orientation="vertical"
-    tools:context="com.iblinfotech.apps.whatsappdirect.New.Activity.CallLogHistoryList">
+    tools:context="com.directmessage.rushmessage.wadirect.New.Activity.CallLogHistoryList">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
