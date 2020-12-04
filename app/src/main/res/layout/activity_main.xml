@@ -24,7 +24,7 @@
             android:layout_gravity="center_horizontal"
             android:text="Select country code and input WhatsApp number"
             android:textColor="@color/dark_gray"
-            android:textSize="@dimen/_13ssp" />
+            android:textSize="@dimen/_13sdp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -65,7 +65,7 @@
                 android:padding="7dp"
                 android:singleLine="true"
                 android:textColor="@android:color/black"
-                android:textSize="@dimen/_16ssp" />
+                android:textSize="@dimen/_16sdp" />
 
             <ImageView
                 android:id="@+id/iv_call"
@@ -162,7 +162,7 @@
                 android:lines="7"
                 android:padding="7dp"
                 android:textColor="#080800"
-                android:textSize="@dimen/_15ssp" />
+                android:textSize="@dimen/_15sdp" />
 
             <Button
                 android:id="@+id/clearText"
@@ -259,7 +259,7 @@
             android:textColor="@color/dark_gray"
             android:textSize="@dimen/_11sdp" />
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/cardsendMessage"
             android:layout_width="@dimen/_120sdp"
             android:layout_height="@dimen/_35sdp"
@@ -281,9 +281,9 @@
                 android:padding="@dimen/_8sdp"
                 android:text="SEND"
                 android:textColor="#ffffff"
-                android:textSize="@dimen/_12ssp" />
+                android:textSize="@dimen/_12sdp" />
 
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
         <!--<RelativeLayout
             android:id="@+id/native_banner_ad_container"
@@ -303,7 +303,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             ads:adSize="BANNER"
-            ads:adUnitId="@string/banner_home_footer">
+            ads:adUnitId="@string/unit_id">
 
         </com.google.android.gms.ads.AdView>
 

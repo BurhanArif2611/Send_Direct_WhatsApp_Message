@@ -3,13 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/pressed_bg"
-    tools:context="com.directmessage.rushmessage.wadirect.New.MessageFragment">
+    tools:context="com.directmessage.rushmessage.MessageFragment">
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycleview_message"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="4dp">
 
-    </android.support.v7.widget.RecyclerView>
+    </androidx.recyclerview.widget.RecyclerView>
 </FrameLayout>

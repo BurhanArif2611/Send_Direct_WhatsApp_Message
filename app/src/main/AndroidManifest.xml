@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.directmessage.rushmessage.wadirect.New">
+    package="com.directmessage.rushmessage">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_CALL_LOG" />
@@ -12,7 +12,7 @@
     <!--<uses-permission android:name="android.permission.BROADCAST_SMS"/>-->
 
     <application
-        android:name="android.support.multidex.MultiDexApplication"
+        android:name="androidx.multidex.MultiDexApplication"
         android:allowBackup="true"
         android:hardwareAccelerated="false"
         android:icon="@drawable/appicon"
@@ -29,6 +29,9 @@
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="ae8696c9f626fd42728f7563dcd18f9e781c6a2a" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/app_id"/>
 
         <activity android:name=".Activity.SplashActivity">
             <intent-filter>
