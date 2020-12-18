@@ -126,9 +126,9 @@ public class MainActivity extends AppCompatActivity implements AdapterCallback {
             public void onInitializationComplete(InitializationStatus initializationStatus) {
             }
         });
-         String android_id = Settings.Secure.getString(MainActivity.this.getContentResolver(),
+       /*  String android_id = Settings.Secure.getString(MainActivity.this.getContentResolver(),
                 Settings.Secure.ANDROID_ID);
-         Log.e("android_id",""+android_id);
+         Log.e("android_id",""+android_id);*/
         setContent();
         setAdmobAds();
         edtTextMsg.addTextChangedListener(new TextWatcher() {
@@ -165,7 +165,8 @@ public class MainActivity extends AppCompatActivity implements AdapterCallback {
     }
 
     public static void loadBannerAdd(AdView mAdView) {
-        AdRequest adRequest = new AdRequest.Builder().addTestDevice("154af132-ab3c-4401-b3e7-9480db883846").build();
+       // AdRequest adRequest = new AdRequest.Builder().addTestDevice("5ad5c0b4-12c0-41fb-a69a-ed60b2e7a18a").build();
+        AdRequest adRequest = new AdRequest.Builder().build();
 
         mAdView.setAdListener(new AdListener() {
             @Override
@@ -266,16 +267,16 @@ public class MainActivity extends AppCompatActivity implements AdapterCallback {
         iv_call.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setInterstitialAd();
-                /*Intent intent = new Intent(MainActivity.this, CallLogHistoryList.class);
-                startActivityForResult(intent, REQUEST_FOR_ACTIVITY_CODE);*/
+                //setInterstitialAd();
+               Intent intent = new Intent(MainActivity.this, CallLogHistoryList.class);
+                startActivityForResult(intent, REQUEST_FOR_ACTIVITY_CODE);
             }
         });
     }
 
     private void setInterstitialAd() {
 
-        AdRequest adRequest = new AdRequest.Builder().addTestDevice("f4f11da24ebf8c3b").build();
+        AdRequest adRequest = new AdRequest.Builder().addTestDevice("5ad5c0b4-12c0-41fb-a69a-ed60b2e7a18a").build();
         mInterstitialAd = new InterstitialAd(this);
         mInterstitialAd.setAdUnitId(getResources().getString(R.string.Interstitial_Ad));
         mInterstitialAd.setAdListener(new AdListener() {

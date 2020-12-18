@@ -4,15 +4,15 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.YourCompanyName.YourAppName",
+  "applicationId": "com.directmessage.rushmessage",
   "variantName": "release",
   "elements": [
     {
       "type": "SINGLE",
       "filters": [],
       "properties": [],
-      "versionCode": 2,
-      "versionName": "1.0.1",
+      "versionCode": 1,
+      "versionName": "1.0.2",
       "enabled": true,
       "outputFile": "app-release.apk"
     }
