@@ -48,7 +48,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_33sdp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginTop="@dimen/_10sdp"
             android:background="@drawable/background">
@@ -56,10 +56,11 @@
             <EditText
                 android:id="@+id/et_phone"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginRight="@dimen/_30sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_100sdp"
                 android:background="@null"
                 android:gravity="center_vertical"
+                android:layout_centerVertical="true"
                 android:hint="Enter WhatsApp number"
                 android:inputType="phone"
                 android:padding="7dp"
@@ -67,21 +68,27 @@
                 android:textColor="@android:color/black"
                 android:textSize="@dimen/_16ssp" />
 
-            <ImageView
+            <TextView
                 android:id="@+id/iv_call"
-                android:layout_width="@dimen/_30sdp"
+                android:layout_width="wrap_content"
                 android:layout_height="@dimen/_30sdp"
                 android:layout_alignParentRight="true"
                 android:layout_centerInParent="true"
                 android:padding="6dp"
-                ads:srcCompat="@drawable/ic_phone"
-                android:layout_marginRight="@dimen/_5sdp"/>
+                android:drawableLeft="@drawable/ic_phone"
+                android:drawablePadding="@dimen/_5sdp"
+                android:background="@drawable/background_button"
+                android:text="Pick Call Log"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_margin="@dimen/_5sdp"/>
 
             <View
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
                 android:layout_marginRight="@dimen/_4sdp"
                 android:layout_toLeftOf="@+id/iv_call"
+                android:visibility="gone"
                 android:background="@color/colorAccent" />
 
         </RelativeLayout>
@@ -189,7 +196,7 @@
                     android:layout_height="wrap_content"
                     andrbg_mainound="@drawabg_mainound">
 
-                    <android.support.design.widget.TextInputLayout
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/edtxt_input"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -213,7 +220,7 @@
                             android:textColor="#080800"
                             android:textSize="@dimen/_15ssp" />
 
-                    </android.support.design.widget.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
                     <Button
                         android:id="@+id/clearText"
@@ -259,7 +266,7 @@
             android:textColor="@color/dark_gray"
             android:textSize="@dimen/_11sdp" />
 
-        <android.support.v7.widget.CardView
+        <androidx.cardview.widget.CardView
             android:id="@+id/cardsendMessage"
             android:layout_width="@dimen/_120sdp"
             android:layout_height="@dimen/_35sdp"
@@ -283,7 +290,7 @@
                 android:textColor="#ffffff"
                 android:textSize="@dimen/_12ssp" />
 
-        </android.support.v7.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
         <!--<RelativeLayout
             android:id="@+id/native_banner_ad_container"
