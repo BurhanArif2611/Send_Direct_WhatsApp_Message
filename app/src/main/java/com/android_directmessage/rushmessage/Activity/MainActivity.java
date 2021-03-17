@@ -15,6 +15,7 @@ import android.database.Cursor;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Handler;
 import android.provider.CallLog;
 /*import com.google.android.material.textfield.TextInputLayout;*/
@@ -22,6 +23,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import androidx.cardview.widget.CardView;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 /*import androidx.appcompat.widget.Toolbar;*/
@@ -46,8 +48,10 @@ import android.widget.Toast;
 import com.crashlytics.android.Crashlytics;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
+import com.google.android.gms.ads.MobileAds;
 import com.google.android.material.textfield.TextInputLayout;
 import com.hbb20.CountryCodePicker;
 import com.android_directmessage.rushmessage.Adapter.CallListAdapter;
@@ -66,6 +70,10 @@ import java.util.Date;
 import io.michaelrocks.libphonenumber.android.NumberParseException;
 import io.michaelrocks.libphonenumber.android.PhoneNumberUtil;
 import io.michaelrocks.libphonenumber.android.Phonenumber;
+
+import static android.Manifest.permission.ACCESS_FINE_LOCATION;
+import static android.Manifest.permission.READ_EXTERNAL_STORAGE;
+import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
 
 public class MainActivity extends AppCompatActivity implements AdapterCallback {
 
@@ -91,7 +99,7 @@ public class MainActivity extends AppCompatActivity implements AdapterCallback {
     int callType;
     String selectedNumber;
     private int REQUEST_FOR_ACTIVITY_CODE = 55;
-
+    public final int PERMISSION_REQUEST_CODE = 1111;
     AdapterCallback callback;
     final String appPackageName = "com.YourCompanyName.YourAppName";
 
@@ -108,7 +116,7 @@ public class MainActivity extends AppCompatActivity implements AdapterCallback {
         super.onCreate(savedInstanceState);
         Fabric.with(this, new Crashlytics());
         setContentView(R.layout.activity_main);
-
+        MobileAds.initialize(this);
         setContent();
         setAdmobAds();
         edtTextMsg.addTextChangedListener(new TextWatcher() {
@@ -133,18 +141,29 @@ public class MainActivity extends AppCompatActivity implements AdapterCallback {
                 }
             }
         });
+
+        /*if (Build.VERSION.SDK_INT >= 23) {
+            if (checkPermission()) {
+            } else {
+                requestPermission();
+            }
+        }*/
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.READ_CALL_LOG) == PackageManager.PERMISSION_GRANTED) {
+
+        } else {
+            requestLocationPermission();
+        }
     }
 
     private void setAdmobAds() {
         AdView mAdView = (AdView) findViewById(R.id.adView);
-
         mAdView.setVisibility(View.VISIBLE);
         loadBannerAdd(mAdView);
     }
 
     public static void loadBannerAdd(AdView mAdView) {
         AdRequest adRequest = new AdRequest.Builder()
-                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                /*.addTestDevice(AdRequest.DEVICE_ID_EMULATOR)*/
                 .build();
         mAdView.setAdListener(new AdListener() {
             @Override
@@ -157,6 +176,7 @@ public class MainActivity extends AppCompatActivity implements AdapterCallback {
 
             @Override
             public void onAdFailedToLoad(int errorCode) {
+                Log.e("errorCode",""+errorCode);
             }
 
             @Override
@@ -420,8 +440,8 @@ public class MainActivity extends AppCompatActivity implements AdapterCallback {
 
                 } else {
 
-                    dialog.dismiss();
-                    progressDialog.dismiss();
+                  //  dialog.dismiss();
+                  //  progressDialog.dismiss();
                     // permission denied,Disable the
                     // functionality that depends on this permission.
                 }
@@ -652,6 +672,7 @@ public class MainActivity extends AppCompatActivity implements AdapterCallback {
             countryCodePicker.setCountryForPhoneCode(countryCode);
         }
     }
+
 }
 
 

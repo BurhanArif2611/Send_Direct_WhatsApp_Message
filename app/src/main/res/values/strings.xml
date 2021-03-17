@@ -15,10 +15,18 @@
    &lt;!&ndash;<string name="Interstitial_Ad">ca-app-pub-5951208659244773/3574497550</string>&ndash;&gt;
     <string name="Interstitial_Ad">ca-app-pub-3940256099942544/1033173712</string>-->
 
-    <string name="app_id">ca-app-pub-5951208659244773~5971205341</string>
+  <!--  <string name="app_id">ca-app-pub-5951208659244773~5971205341</string>
     <string name="unit_id">ca-app-pub-5951208659244773/8171839184</string>
     <string name="banner_home_footer">ca-app-pub-5951208659244773/8171839184</string>
-    <string name="Interstitial_Ad">ca-app-pub-5951208659244773/2135886206</string>
+    <string name="Interstitial_Ad">ca-app-pub-5951208659244773/2135886206</string>  -->
+
+    <string name="app_id">ca-app-pub-5951208659244773~9399709616</string>
+    <string name="unit_id">ca-app-pub-5951208659244773/6581974580</string>
+    <string name="banner_home_footer">ca-app-pub-5951208659244773/6581974580</string>
+    <string name="Interstitial_Ad">ca-app-pub-5951208659244773/7072929178</string>
+
+
+
     <!--<string name="banner_home_footer">ca-app-pub-3940256099942544/6300978111</string>
     <string name="Interstitial_Ad">ca-app-pub-3940256099942544/1033173712</string>-->
 
