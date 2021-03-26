@@ -148,11 +148,11 @@ public class MainActivity extends AppCompatActivity implements AdapterCallback {
                 requestPermission();
             }
         }*/
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.READ_CALL_LOG) == PackageManager.PERMISSION_GRANTED) {
+       /* if (ActivityCompat.checkSelfPermission(this, Manifest.permission.READ_CALL_LOG) == PackageManager.PERMISSION_GRANTED) {
 
         } else {
             requestLocationPermission();
-        }
+        }*/
     }
 
     private void setAdmobAds() {
@@ -260,16 +260,16 @@ public class MainActivity extends AppCompatActivity implements AdapterCallback {
         iv_call.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               // setInterstitialAd();
-                Intent intent = new Intent(MainActivity.this, CallLogHistoryList.class);
-                startActivityForResult(intent, REQUEST_FOR_ACTIVITY_CODE);
+                setInterstitialAd();
+               /* Intent intent = new Intent(MainActivity.this, CallLogHistoryList.class);
+                startActivityForResult(intent, REQUEST_FOR_ACTIVITY_CODE);*/
             }
         });
     }
 
     private void setInterstitialAd() {
 
-        AdRequest adRequest = new AdRequest.Builder().addTestDevice("YOUR_TEST_DEVICE_ID").build();
+        AdRequest adRequest = new AdRequest.Builder().build();
         mInterstitialAd = new InterstitialAd(this);
         mInterstitialAd.setAdUnitId(getResources().getString(R.string.Interstitial_Ad));
         mInterstitialAd.setAdListener(new AdListener() {
